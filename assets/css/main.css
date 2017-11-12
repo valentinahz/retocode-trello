@@ -67,14 +67,14 @@ font-size: 22px;
 	float: right;
 }
 
-.header-icon {
+.icono-cabezal {
     left: -38px;
     color: #FFF;
     top: 0;
     content: "\e936";
 }
 
-.header-name {
+.tablero-word {
     display: inline-block;
     line-height: 24px;
     margin: 3px 0 0;
