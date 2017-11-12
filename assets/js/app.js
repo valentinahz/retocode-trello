@@ -26,6 +26,10 @@ function send(list) {
 
 
 function addMsn(text) {
+
+    var newText = document.createTextNode
+    var newUl = document.createElement('ul');
+    var newLi = document.createElement('li');
     var newDiv = document.createElement('div');
     newDiv.innerText = text;
     var cont = document.getElementById("cont");
