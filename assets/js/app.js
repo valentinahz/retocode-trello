@@ -27,13 +27,18 @@ function send(list) {
 
 function addMsn(text) {
 
-    var newText = document.createTextNode
-    var newUl = document.createElement('ul');
+    var newText = document.createTextNode('');
     var newLi = document.createElement('li');
+    var newUl = document.createElement('ul');
     var newDiv = document.createElement('div');
     newDiv.innerText = text;
     var cont = document.getElementById("cont");
-    cont.insertBefore(newDiv, cont.childNodes[1]).classList.add("box");
+
+
+
+    newLi.appendChild(newText);  // dando nodo de texto a li
+    newUl.appendChild(newLi); // dando li a ul
+    newDiv.appendChild(newUl); // dando ul al div
 }
 
 
