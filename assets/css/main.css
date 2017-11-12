@@ -1,0 +1,154 @@
+body{
+	    background: #38CA31;
+	    height: 100%;
+	    margin: 0;
+	    z-index: 0;
+	    font-family: Lato, sans-serif;
+}
+
+header{
+background:#15AB11;
+width: auto;
+height: 30px;
+border: none;
+padding-bottom: 10px;
+margin-right: auto;
+position: relative;
+padding: 5px 8px;
+}
+
+.trello-logo{
+width: 75px;
+height: 25px;
+background-position: 100%;
+opacity: 0.8;
+}
+
+span{
+	font-size: 16px;
+}
+
+ul{
+	list-style: none; /*quita las viñetas de la lista*/
+	margin: 0;
+	padding: 0;
+	line-height: 40px;
+	overflow: auto;
+	text-align: center
+}
+
+li{
+  list-style: none;
+}
+
+button{
+float: left;
+width: 150px;
+height: 30px;
+border: none;
+color:#FFF;
+background-color:#8BFF9E;
+padding: 0;	
+font-weight: bold;
+border-radius: 3px;
+margin-left: 5px;
+}
+
+h3{
+font-size: 22px;
+}
+
+.fa{
+	font-size: 18px;
+	padding: 8px;
+}
+
+.fa-search{
+	float: right;
+}
+
+.header-icon {
+    left: -38px;
+    color: #FFF;
+    top: 0;
+    content: "\e936";
+}
+
+.header-name {
+    display: inline-block;
+    line-height: 24px;
+    margin: 3px 0 0;
+    font-size: 1pc;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+#tablero-Header {
+    margin: 0 auto;
+    max-width: 1250px;
+    margin: 0 0 0 38px;
+    padding: 0 0 11px;
+    position: relative;
+}
+
+#listadd{
+    background: rgba(0,0,0,.12);
+    cursor: pointer;
+    color: #fff;
+    width: 270px;
+    margin: 0 15px;
+    height: auto;
+    min-height: 30px;
+    padding: 4px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+    white-space: nowrap;
+    margin: 10px;
+
+}
+
+#holder-place{
+	display: block;
+	padding: 7px;
+	vertical-align: top;
+    white-space: nowrap;
+    user-select: none;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+input{
+	text-rendering: auto;
+	letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    -webkit-writing-mode: horizontal-tb;
+    padding:5px;
+    margin-bottom: 5px;
+}
+
+#btn-save{
+    background: #5AAC44;
+    box-shadow: 0 1px 0 #519839;
+    color: #fff;
+    -webkit-transition: backgroun .3s ease;
+    transition: background .3s ease;
+    float: left;
+    min-height: 30px;
+    height: 30px;
+    margin-top: 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    line-height: 22px;
+    border: none;
+    border-radius: 4px;
+}
+
