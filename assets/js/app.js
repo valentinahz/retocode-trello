@@ -1,31 +1,45 @@
-window.addEventListener("load", function() {
-	var contador =1;
-	var boardMark = document.getElementById("boardMark");
-	var btn = document.getElementById("button");
-	var tarea = document.getElementById("listName");
-	var formulario = document.getElementById("form");
-	var tareas = document.getElementById("listAdd");
-	var form = document.getElementById("form");
-	form.style.display="none";
-	btn.addEventListener("click",agregarTarjeta);
 
-})
-	
-	function agregarTarjeta() {
-		add.preventDefault();
-		btn.style.display="none";
-		form.style.display="inline-block";
-		tarea.value= "";
-		    var mark = document.createElement("div");
-            var nameSpan = document.createElement("span");
-            var dateSpan = document.createElement("span");
-            var list = document.createElement("p");
-            mark.appendChild(nameSpan);
-            mark.appendChild(dateSpan);
-            mark.appendChild(list);
-            mark.className = "list"
-            dateSpan.textContent = new Date();
-            list.textContent = Input.value;
 
-	}
+
+window.addEventListener("load", up);
+
+var btn_save = document.getElementById('btn-save');
+var texto = document.getElementById('listName');
+
+
+
+//Evento para activar el botón
+
+function up() {
+    btn_tweet.addEventListener("click", send);
+        texto.addEventListener("keydown", grow);
+}
+    
+function send(list) {
+    list.preventDefault();
+    var text = listName.value;
+    addMsn(text);
+    texto.value = "";
+  
+}
+
+
+
+function addMsn(text) {
+    var newDiv = document.createElement('div');
+    newDiv.innerText = text;
+    var cont = document.getElementById("cont");
+    cont.insertBefore(newDiv, cont.childNodes[1]).classList.add("box");
+}
+
+
+//función crecer area
+
+function grow() {
+    listName.style.cssText = "height: auto";
+    listName.style.cssText = "height: " + listName.scrollHeight + "px";
+}
+
+function resize() {
+    listName.style.cssText = "height: auto";
 }
